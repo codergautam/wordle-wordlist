@@ -21,5 +21,8 @@
     "list"
   ],
   "author": "CoderGautamYT",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.25.0"
+  }
 }
