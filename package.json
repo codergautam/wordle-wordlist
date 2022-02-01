@@ -1,0 +1,25 @@
+{
+  "name": "wordle-wordlist",
+  "version": "1.0.0",
+  "description": "Fetch wordle wordlist easily",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codergautam/wordle-wordlist"
+  },
+  "keywords": [
+    "wordle",
+    "wordle",
+    "word",
+    "list",
+    "wordle",
+    "list",
+    "word",
+    "list"
+  ],
+  "author": "CoderGautamYT",
+  "license": "ISC"
+}
