@@ -1,5 +1,8 @@
 var fetchit = require("./fetchit")
 
+var cacheGuesses = require("./cache/guesses")
+var cacheAnswers = require("./cache/answers")
+
 module.exports = {
   guesses: async () => {
     return await fetchit("https://gist.githubusercontent.com/cfreshman/cdcdf777450c5b5301e439061d29694c/raw/de1df631b45492e0974f7affe266ec36fed736eb/wordle-allowed-guesses.txt")
@@ -10,5 +13,13 @@ module.exports = {
 
   all: async ( ) => {
     return [...await module.exports.guesses(), ...await module.exports.answers()].sort()
+  },
+
+  cache: {
+    guesses: cacheGuesses.guesses,
+    answers: cacheAnswers.answers,
+    all: [...cacheGuesses.guesses, ... cacheAnswers.answers].sort()
+
+    
   }
 }

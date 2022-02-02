@@ -1,7 +1,7 @@
 {
   "name": "wordle-wordlist",
-  "version": "1.0.0",
-  "description": "Fetch wordle wordlist easily",
+  "version": "1.0.1c",
+  "description": "An easy way to fetch wordle's wordlist!",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

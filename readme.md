@@ -1,8 +1,8 @@
 # wordle-wordlist
 
-> ### easy way to fetch wordle's wordlist
+ easy way to fetch wordle's wordlist
 
-#### WIP!!! IF YOU FIND ANY BUGS OPEN ISSUE ON GITHUB!!!
+![npm](https://img.shields.io/npm/dt/wordle-wordlist.png)
 
 ## usage
 
@@ -18,7 +18,7 @@ Import the module
 var wordlist = require("wordle-wordlist")
 ```
 
-Access the wordlist:
+Access the latest wordlist:
 
 - Allowed guesses(doesnt contain answers) - 
 `wordlist.guesses()`
@@ -26,6 +26,8 @@ Access the wordlist:
 - All words (most used) - `wordlist.all()`
 
 NOTE: ALL FUNCTIONS RETURN PROMISES!!!
+
+MAKE SURE TO USE A PROMISE OR `await`
 
 EXAMPLE USAGE:
 
@@ -42,4 +44,30 @@ wordlist.guesses().then((words) => {
 console.log(allowedGuesses) //array of words in alphabetical order
 ```
 
-# thanks
+Example with async/await
+```
+var wordlist = require("wordle-wordlist")
+
+async function go() {
+var allowedGuesses = await wordlist.guesses()
+
+console.log(allowedGuesses) //array of words in alphabetical order
+}
+```
+
+
+# hate promises or async functions?
+
+well don't worry, you can use the cache wordlist. 
+
+I will try to keep it up to date, but no guarantees.
+
+### access cached wordlist:
+
+```
+var wordlist = require("wordle-wordlist")
+
+var guessesOnly = wordlist.cache.guesses
+var answersOnly = wordlist.cache.answers
+var allWords = wordlist.cache.all
+```
