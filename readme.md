@@ -1,3 +1,5 @@
+# AFTER NYT PURCHASED WORDLE THEY CHANGED THE WORDLIST!! THIS IS NO LONGER VALID!!
+
 # wordle-wordlist
 
  easy way to fetch wordle's wordlist
